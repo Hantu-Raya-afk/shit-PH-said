@@ -1,7 +1,6 @@
 baseURL = "https://YOUR_USERNAME.github.io/shit-ph-said/"
 languageCode = "en-us"
 title = "Shit PH Said"
-theme = ""
 paginate = 20
 
 [params]
