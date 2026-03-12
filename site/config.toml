@@ -1,15 +1,12 @@
-baseURL = "https://YOUR_USERNAME.github.io/shit-ph-said/"
+baseURL = "https://hantu-raya-afk.github.io/shit-PH-said/"
 languageCode = "en-us"
 title = "Shit PH Said"
 paginate = 20
 
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke"
+
 [params]
   description = "Tracking contradictions and broken promises from Pakatan Harapan"
-  author = "Anonymous"
-
-[taxonomies]
-  category = "categories"
-  tag = "tags"
-
-[outputs]
-  home = ["HTML", "RSS"]
+  author = "Hantu Raya"
