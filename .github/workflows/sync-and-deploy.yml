@@ -37,10 +37,12 @@ jobs:
         run: python scripts/sync_notion.py
 
       # 5. Set up Hugo
-      - name: Set up Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: 'latest'
+      - name: Build Hugo site
+        run: |
+          cd site
+          hugo mod init github.com/Hantu-Raya-afk/shit-PH-said
+          hugo mod get
+          hugo --minify
 
       # 6. Build site
       - name: Build Hugo site
