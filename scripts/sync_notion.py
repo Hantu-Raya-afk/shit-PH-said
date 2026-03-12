@@ -12,8 +12,8 @@ from datetime import datetime
 from pathlib import Path
 
 # ── Config ──────────────────────────────────────────────
-NOTION_TOKEN = "ntn_m9683466924agRMWfXFFEf1HZpG2ACk8GgDeFfJH6zi2sW"
-NOTION_DATABASE_ID = "810f8ba0-ecef-434f-90e0-bcece0ac649f"
+NOTION_TOKEN = os.environ["NOTION_TOKEN"]
+NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
 OUTPUT_DIR = Path("site/content/posts")
 
 HEADERS = {
