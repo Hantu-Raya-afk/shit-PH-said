@@ -1,0 +1,16 @@
+baseURL = "https://YOUR_USERNAME.github.io/shit-ph-said/"
+languageCode = "en-us"
+title = "Shit PH Said"
+theme = ""
+paginate = 20
+
+[params]
+  description = "Tracking contradictions and broken promises from Pakatan Harapan"
+  author = "Anonymous"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]

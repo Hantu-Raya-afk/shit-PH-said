@@ -1,0 +1,56 @@
+name: Sync Notion & Deploy to GitHub Pages
+
+on:
+  schedule:
+    # Runs every 6 hours (adjust as needed)
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Manual trigger button
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout repo
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Install Python dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run Notion sync script
+      - name: Sync from Notion
+        env:
+          NOTION_TOKEN: $ secrets.NOTION_TOKEN 
+          NOTION_DATABASE_ID: $ secrets.NOTION_DATABASE_ID 
+        run: python scripts/sync_notion.py
+
+      # 5. Set up Hugo
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+
+      # 6. Build site
+      - name: Build Hugo site
+        run: |
+          cd site
+          hugo --minify
+
+      # 7. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: $ secrets.GITHUB_TOKEN 
+          publish_dir: ./site/public
