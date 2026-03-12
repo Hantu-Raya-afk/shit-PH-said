@@ -13,6 +13,10 @@ summaryLength = 9999
   full_content = true
   custom_css = ["css/custom.css"]
 
+[params.siteMeta]
+  og_title = "Shit PH Said"
+  og_description = "Tracking what Malaysian politicians say vs what they do"
+
 [taxonomies]
   category = "categories"
   tag = "tags"
