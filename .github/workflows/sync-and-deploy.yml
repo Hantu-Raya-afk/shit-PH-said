@@ -32,8 +32,8 @@ jobs:
       # 4. Run Notion sync script
       - name: Sync from Notion
         env:
-          NOTION_TOKEN: $ secrets.NOTION_TOKEN
-          NOTION_DATABASE_ID: $ secrets.NOTION_DATABASE_ID
+          NOTION_TOKEN: $ secrets.NOTION_TOKEN 
+          NOTION_DATABASE_ID: $ secrets.NOTION_DATABASE_ID 
         run: python scripts/sync_notion.py
 
       # 5. Set up Hugo
@@ -52,5 +52,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: $ secrets.GITHUB_TOKEN
+          github_token: $ secrets.GITHUB_TOKEN 
           publish_dir: ./site/public
