@@ -1,0 +1,68 @@
+/* Dark theme */
+body {
+  background-color: #1a1a2e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Dark purple banner */
+.bg-near-black {
+  background-color: #2d1b69 !important;
+}
+
+/* Article cards / content area */
+.athelas, .pa3, .pa4, .ph3, .ph4 {
+  background-color: #1a1a2e !important;
+  color: #e0e0e0 !important;
+}
+
+/* Links */
+a {
+  color: #bb86fc !important;
+}
+
+a:hover {
+  color: #d4a3ff !important;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: #f0e6ff !important;
+}
+
+/* Post titles on listing */
+.f3, .f4, .f5 {
+  color: #f0e6ff !important;
+}
+
+/* Meta text (dates, categories) */
+.gray, .mid-gray, .dark-gray {
+  color: #9e9e9e !important;
+}
+
+/* Footer */
+footer, .pv4, .ph3.pv4 {
+  background-color: #2d1b69 !important;
+  color: #c0c0c0 !important;
+}
+
+/* Summary/description text */
+.nested-copy-line-height {
+  color: #d0d0d0 !important;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: #bb86fc !important;
+  color: #c0b3d9 !important;
+}
+
+/* Category tags */
+.category {
+  background: #7c3aed !important;
+  color: white !important;
+}
+
+/* Pagination links */
+.pagination a {
+  color: #bb86fc !important;
+}
