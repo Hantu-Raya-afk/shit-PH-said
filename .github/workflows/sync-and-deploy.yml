@@ -47,8 +47,8 @@ jobs:
       - name: Build Hugo site
         run: |
           cd site
-          hugo mod init github.com/Hantu-Raya-afk/shit-PH-said
-          hugo mod get
+          mkdir -p themes
+          git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
           hugo --minify
 
       # 7. Deploy to GitHub Pages
