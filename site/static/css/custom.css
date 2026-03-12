@@ -1,68 +1,69 @@
-/* Dark theme */
-body {
-  background-color: #1a1a2e !important;
-  color: #e0e0e0 !important;
+/* Black background, white text */
+body,
+.athelas,
+.pa3, .pa4,
+.ph3, .ph4,
+.bg-near-black,
+.nested-copy-line-height,
+article,
+main,
+section {
+  background-color: #0a0a0a !important;
+  color: #e8e8e8 !important;
 }
 
-/* Dark purple banner */
-.bg-near-black {
-  background-color: #2d1b69 !important;
+/* Banner header + footer — pure black */
+header,
+footer,
+.pv4,
+.ph3.pv4,
+nav {
+  background-color: #0a0a0a !important;
+  color: #e8e8e8 !important;
 }
 
-/* Article cards / content area */
-.athelas, .pa3, .pa4, .ph3, .ph4 {
-  background-color: #1a1a2e !important;
-  color: #e0e0e0 !important;
-}
-
-/* Links */
-a {
-  color: #bb86fc !important;
-}
-
-a:hover {
-  color: #d4a3ff !important;
+/* Site title */
+.f1, .site-title {
+  color: #ffffff !important;
 }
 
 /* Headings */
 h1, h2, h3, h4 {
-  color: #f0e6ff !important;
+  color: #ffffff !important;
 }
 
-/* Post titles on listing */
-.f3, .f4, .f5 {
-  color: #f0e6ff !important;
+/* Body text */
+p, li, span, td, th, .f3, .f4, .f5, .f6 {
+  color: #e8e8e8 !important;
 }
 
-/* Meta text (dates, categories) */
-.gray, .mid-gray, .dark-gray {
-  color: #9e9e9e !important;
+/* Links — keep them visible but subtle */
+a {
+  color: #b0b0b0 !important;
 }
 
-/* Footer */
-footer, .pv4, .ph3.pv4 {
-  background-color: #2d1b69 !important;
-  color: #c0c0c0 !important;
+a:hover {
+  color: #ffffff !important;
 }
 
-/* Summary/description text */
-.nested-copy-line-height {
-  color: #d0d0d0 !important;
+/* Meta text */
+.gray, .mid-gray, .dark-gray, .silver {
+  color: #888888 !important;
 }
 
 /* Blockquotes */
 blockquote {
-  border-left-color: #bb86fc !important;
-  color: #c0b3d9 !important;
+  border-left-color: #555555 !important;
+  color: #cccccc !important;
 }
 
-/* Category tags */
-.category {
-  background: #7c3aed !important;
-  color: white !important;
+/* Dividers */
+hr {
+  border-color: #333333 !important;
 }
 
-/* Pagination links */
-.pagination a {
-  color: #bb86fc !important;
+/* Code blocks */
+pre, code {
+  background-color: #151515 !important;
+  color: #e8e8e8 !important;
 }
