@@ -72,8 +72,20 @@ def get_page_content(page_id):
 
 
 def extract_rich_text(rich_text_list):
-    """Extract plain text from Notion rich text array."""
-    return "".join(rt.get("plain_text", "") for rt in rich_text_list)
+    """Extract text from Notion rich text array, preserving hyperlinks."""
+    parts = []
+    for rt in rich_text_list:
+        text = rt.get("plain_text", "")
+        href = rt.get("href")
+        if href:
+            parts.append(f"[{text}]({href})")
+        elif rt.get("annotations", {}).get("bold"):
+            parts.append(f"**{text}**")
+        elif rt.get("annotations", {}).get("italic"):
+            parts.append(f"*{text}*")
+        else:
+            parts.append(text)
+    return "".join(parts)
 
 
 def extract_property(page, prop_name, prop_type):
