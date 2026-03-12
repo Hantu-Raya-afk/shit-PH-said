@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 # ── Config ──────────────────────────────────────────────
-NOTION_TOKEN = os.environ["NOTION_TOKEN"]
+NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "ntn_m9683466924agRMWfXFFEf1HZpG2ACk8GgDeFfJH6zi2sW")
 NOTION_DATABASE_ID = "810f8ba0-ecef-434f-90e0-bcece0ac649f"
 OUTPUT_DIR = Path("site/content/posts")
 
