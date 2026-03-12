@@ -2,7 +2,7 @@ baseURL = "https://hantu-raya-afk.github.io/shit-PH-said/"
 languageCode = "en-us"
 title = "Shit PH Said, Mostly By Anwar"
 theme = "ananke"
-paginate = 20
+paginate = 9999
 summaryLength = 9999
 
 [params]
