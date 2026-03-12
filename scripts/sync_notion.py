@@ -35,7 +35,7 @@ def query_database():
             "or": [
                 {
                     "property": "Posted",
-                    "select": {"equals": "Substack And Bear"}
+                    "select": {"does_not_equal": "Dupe"}
                 }
             ]
         },
