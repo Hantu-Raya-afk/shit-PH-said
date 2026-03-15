@@ -1,7 +1,4 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* Dark background, white text */
+/* Dark background */
 body, html, main, section, .bg-near-black {
   background-color: #0d0d0d !important;
   color: #e0e0e0 !important;
@@ -13,7 +10,7 @@ body, html, main, section, .bg-near-black {
   margin: 0 auto !important;
 }
 
-/* Header - minimal */
+/* Header */
 header, .pv4, nav {
   background-color: #0d0d0d !important;
 }
@@ -22,27 +19,21 @@ header h1, .f1 {
   font-size: 1.5rem !important;
 }
 
-/* Hide article summaries - show title only */
-.summary, .nested-copy-line-height p,
-article .f6.f5-l, article .lh-copy {
-  display: none !important;
-}
-
-/* Each article = one compact line */
-article.post-item, article {
+/* Each article - compact with snippet */
+article {
   margin: 0 !important;
-  padding: 6px 0 !important;
+  padding: 10px 0 !important;
   border-bottom: 1px solid #1a1a1a !important;
   background: transparent !important;
 }
 
-/* Article titles as simple lines */
-article h1, article h2, article h3,
-.f3, .f4, .f5, article a {
-  font-size: 0.95rem !important;
-  font-weight: 400 !important;
-  color: #d0d0d0 !important;
-  line-height: 1.8 !important;
+/* Article titles */
+article h1 a, article h2 a, article h3 a,
+.f3 a, .f4 a, .f5 a {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #e0e0e0 !important;
+  line-height: 1.5 !important;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -52,17 +43,27 @@ article a:hover {
   color: #ffffff !important;
 }
 
-/* Hide images, thumbnails, featured images */
+/* SHOW summaries/snippets */
+.nested-copy-line-height, .lh-copy,
+article p, .summary {
+  display: block !important;
+  font-size: 0.85rem !important;
+  color: #888 !important;
+  margin: 4px 0 0 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+}
+
+/* Hide images and thumbnails */
 article img, .cover, .aspect-ratio {
   display: none !important;
 }
 
-/* Meta info (date, category) - inline and subtle */
-.meta, time, .category-label,
+/* Meta info - date, category */
+time, .category-label,
 article .f6, article .gray, article .mid-gray {
-  font-size: 0.8rem !important;
-  color: #666 !important;
-  display: inline !important;
+  font-size: 0.75rem !important;
+  color: #555 !important;
 }
 
 /* Hide "read more" links */
@@ -79,14 +80,14 @@ footer {
   padding-top: 1rem !important;
 }
 
-/* Remove all card styling */
+/* Remove card styling */
 .pa3, .pa4, .ph3, .ph4 {
-  padding: 0 !important;
+  padding: 4px 0 !important;
   background: transparent !important;
 }
 
-/* Remove box shadows and borders */
-.shadow, .ba, .b--moon-gray {
+/* Remove box shadows */
+.shadow, .b--moon-gray {
   box-shadow: none !important;
   border: none !important;
 }
