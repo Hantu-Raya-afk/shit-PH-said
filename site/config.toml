@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Shit PH Said, Mostly By Anwar"
 theme = "ananke"
 paginate = 9999
+summaryLength = 30
 
 [params]
   description = "Tracking contradictions and broken promises from Pakatan Harapan"
