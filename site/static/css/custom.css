@@ -1,69 +1,96 @@
-/* Black background, white text */
-body,
-.athelas,
-.pa3, .pa4,
-.ph3, .ph4,
-.bg-near-black,
-.nested-copy-line-height,
-article,
-main,
-section {
-  background-color: #0a0a0a !important;
-  color: #e8e8e8 !important;
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Dark background, white text */
+body, html, main, section, .bg-near-black {
+  background-color: #0d0d0d !important;
+  color: #e0e0e0 !important;
 }
 
-/* Banner header + footer — pure black */
-header,
-footer,
-.pv4,
-.ph3.pv4,
-nav {
-  background-color: #0a0a0a !important;
-  color: #e8e8e8 !important;
+/* Center content */
+.mw-100, .center {
+  max-width: 900px !important;
+  margin: 0 auto !important;
 }
 
-/* Site title */
-.f1, .site-title {
+/* Header - minimal */
+header, .pv4, nav {
+  background-color: #0d0d0d !important;
+}
+header h1, .f1 {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+}
+
+/* Hide article summaries - show title only */
+.summary, .nested-copy-line-height p,
+article .f6.f5-l, article .lh-copy {
+  display: none !important;
+}
+
+/* Each article = one compact line */
+article.post-item, article {
+  margin: 0 !important;
+  padding: 6px 0 !important;
+  border-bottom: 1px solid #1a1a1a !important;
+  background: transparent !important;
+}
+
+/* Article titles as simple lines */
+article h1, article h2, article h3,
+.f3, .f4, .f5, article a {
+  font-size: 0.95rem !important;
+  font-weight: 400 !important;
+  color: #d0d0d0 !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hover effect */
+article a:hover {
   color: #ffffff !important;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-  color: #ffffff !important;
+/* Hide images, thumbnails, featured images */
+article img, .cover, .aspect-ratio {
+  display: none !important;
 }
 
-/* Body text */
-p, li, span, td, th, .f3, .f4, .f5, .f6 {
-  color: #e8e8e8 !important;
+/* Meta info (date, category) - inline and subtle */
+.meta, time, .category-label,
+article .f6, article .gray, article .mid-gray {
+  font-size: 0.8rem !important;
+  color: #666 !important;
+  display: inline !important;
 }
 
-/* Links — keep them visible but subtle */
-a {
-  color: #b0b0b0 !important;
+/* Hide "read more" links */
+.read-more, .btn, .ba {
+  display: none !important;
 }
 
-a:hover {
-  color: #ffffff !important;
+/* Footer */
+footer {
+  background-color: #0d0d0d !important;
+  color: #555 !important;
+  border-top: 1px solid #1a1a1a !important;
+  margin-top: 2rem !important;
+  padding-top: 1rem !important;
 }
 
-/* Meta text */
-.gray, .mid-gray, .dark-gray, .silver {
-  color: #888888 !important;
+/* Remove all card styling */
+.pa3, .pa4, .ph3, .ph4 {
+  padding: 0 !important;
+  background: transparent !important;
 }
 
-/* Blockquotes */
-blockquote {
-  border-left-color: #555555 !important;
-  color: #cccccc !important;
+/* Remove box shadows and borders */
+.shadow, .ba, .b--moon-gray {
+  box-shadow: none !important;
+  border: none !important;
 }
 
-/* Dividers */
-hr {
-  border-color: #333333 !important;
-}
-
-/* Code blocks */
-pre, code {
-  background-color: #151515 !important;
-  color: #e8e8e8 !important;
-}
+/* Links */
+a { color: #b0b0b0 !important; text-decoration: none !important; }
+a:hover { color: #ffffff !important; }
