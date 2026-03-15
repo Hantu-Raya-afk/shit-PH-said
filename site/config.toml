@@ -1,21 +1,15 @@
 baseURL = "https://hantu-raya-afk.github.io/shit-PH-said/"
 languageCode = "en-us"
 title = "Shit PH Said, Mostly By Anwar"
-theme = "ananke"
+theme = "terminal"
 paginate = 9999
-summaryLength = 30
 
 [params]
-  description = "Tracking contradictions and broken promises from Pakatan Harapan"
-  author = "Hantu Raya"
-  background_color_class = "bg-near-black"
-  show_reading_time = false
-  full_content = false
-  custom_css = ["css/custom.css"]
-
-[params.siteMeta]
-  og_title = "Shit PH Said"
-  og_description = "Tracking what Malaysian politicians say vs what they do"
+  showMenuItems = 0
+  fullWidthTheme = false
+  centerTheme = true
+  themeColor = "dark"
+  enableShortcodes = false
 
 [taxonomies]
   category = "categories"
