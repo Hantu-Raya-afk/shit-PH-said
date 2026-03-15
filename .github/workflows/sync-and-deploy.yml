@@ -48,7 +48,7 @@ jobs:
         run: |
           cd site
           mkdir -p themes
-          git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+          git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
           hugo --minify
 
       # 7. Deploy to GitHub Pages
